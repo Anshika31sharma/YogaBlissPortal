@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 import Carousel from './Components/Carousel';
 import Navbar from './Components/Navbar';
 import HomePage from './Components/HomePage';
+import LoginPage from'./Components/LoginPage';
+import ProductPage from './Components/ProductPage';
+import YogaBatch from './Components/YogaBatch';
+
 
 function App() {
   useEffect(() => {
@@ -36,7 +40,9 @@ function App() {
           {[...slides.map((s, i) => <img key={i} src={s} className=' w-full ' />)]}
       </Carousel>
       <HomePage/>
-       
+  <LoginPage />
+       <ProductPage/>
+       <YogaBatch/>
     </>
   );
 }
