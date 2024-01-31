@@ -43,7 +43,7 @@ function App() {
         <>
           <Carousel autoSlide autoSlideInterval={3000}>
             {carouselSlides.map((slide, index) => (
-              <img key={`slide-${index}`} src={slide} alt={`Slide ${index + 1}`} />
+              <img key={`slide-${index}`} src={slide} alt={`Slide ${index + 1}`} className=' ' />
             ))}
           </Carousel>
           <HomePage />
