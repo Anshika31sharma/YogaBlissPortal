@@ -24,6 +24,8 @@ Follow these steps to get started with the Elda Health Yoga website:
 
   
    git clone https://github.com/Anshika31sharma/YogaBlissPortal.git
+
+   
    cd YogaBlissPortal
 
 2. **Install Dependencies:**
