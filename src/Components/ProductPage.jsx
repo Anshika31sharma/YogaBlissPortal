@@ -11,8 +11,8 @@ const ProductPage = () => {
           className="w-full md:w-96 h-96 mb-4 rounded-lg shadow-lg"
         />
         <div className="text-center">
-          <h2 className="text-2xl mt-5 font-bold">What is Yoga for the mind</h2>
-          <p className="mt-2 text-lg">
+          <h2 className="text-4xl mt-5 font-medium">What is Yoga for the mind</h2>
+          <p className="mt-2 text-lg text-gray-500">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil modi accusantium blanditiis ad fugiat. Dicta
             eaque laudantium beatae. Porro deleniti voluptatum natus numquam perspiciatis eligendi, dignissimos quasi
             autem? Laboriosam ex qui aspernatur soluta a eos?
@@ -24,7 +24,7 @@ const ProductPage = () => {
         {/* Package Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Package 1 */}
-          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between transition-transform transform-gpu hover:scale-105">
             <div>
               <h3 className="text-xl font-bold">Package 1</h3>
               <p className="text-lg">$10/month</p>
@@ -33,7 +33,7 @@ const ProductPage = () => {
               Buy Now
             </button>
           </div>
-          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
+          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between transition-transform transform-gpu hover:scale-105">
             <div>
               <h3 className="text-xl font-bold">Package 2</h3>
               <p className="text-lg">$20/month</p>
@@ -44,7 +44,7 @@ const ProductPage = () => {
           </div>
 
           {/* Package 3 */}
-          <div className="bg-gray-100  p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
+          <div className="bg-gray-100  p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between transition-transform transform-gpu hover:scale-105">
             <div>
               <h3 className="text-xl font-bold">Package 3</h3>
               <p className="text-lg">$15/month</p>

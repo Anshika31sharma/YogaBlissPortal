@@ -9,9 +9,12 @@ function HomePage() {
 
   const handlePlay = () => {
     if (videoRef.current) {
+      videoRef.current.currentTime = 0.05;
       videoRef.current.play();
     }
   };
+  
+
 
   const handlePause = () => {
     if (videoRef.current) {
@@ -31,36 +34,28 @@ function HomePage() {
             </video>
           </div>
         </div>
+        
       </div>
       <div className='flex flex-wrap gap-10  mt-20 mb-20 items-center justify-center '>
       
-      <div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white  shadow-lg  flex flex-col items-center justify-center">
-          <img
-            src={icon1}
-            alt="Card Image"
-            className="h-24"
-          />
-          <h1 className="text-center font-extrabold text-3xl mt-5">Hard to feel calm</h1>
-          <button className='w-48 rounded-xl text-red-400 hover:bg-red-400 border hover:text-white border-red-400 mt-14'> Book trial</button>
-        </div>
-        <div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white  shadow-lg  flex flex-col items-center justify-center">
-          <img
-            src={icon2}
-            alt="Card Image"
-            className="h-24"
-          />
-          <h1 className="text-center font-extrabold text-3xl mt-5">If you have a breathing problem</h1>
-          <button className='w-48 rounded-xl text-red-400 hover:bg-red-400 hover:text-white border border-red-400 mt-5'> Book trial</button>
-        </div>
-        <div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white shadow-lg  flex flex-col items-center justify-center">
-          <img
-            src={icon3}
-            alt="Card Image"
-            className="h-24"
-          />
-          <h1 className="text-center font-extrabold text-3xl mt-5">You have avoided physical activity.</h1>
-          <button className='w-48 rounded-xl text-red-400 hover:text-white  hover:bg-red-400 border border-red-400 mt-5'>Book trial</button>
-        </div>
+      <div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white shadow-lg flex flex-col items-center justify-center transition-transform transform-gpu hover:scale-105">
+  <img src={icon1} alt="Card Image" className="h-24" />
+  <h1 className="text-center font-extrabold text-3xl mt-5">Hard to feel calm</h1>
+  <button className='w-48 rounded-xl text-red-400 hover:bg-red-400 border hover:text-white border-red-400 mt-14'> Book trial</button>
+</div>
+
+<div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white shadow-lg flex flex-col items-center justify-center transition-transform transform-gpu hover:scale-105">
+  <img src={icon2} alt="Card Image" className="h-24" />
+  <h1 className="text-center font-extrabold text-3xl mt-5">If you have a breathing problem</h1>
+  <button className='w-48 rounded-xl text-red-400 hover:bg-red-400 hover:text-white border border-red-400 mt-5'> Book trial</button>
+</div>
+
+<div className="w-full md:w-1/3 lg:w-1/4 h-80 bg-white shadow-lg flex flex-col items-center justify-center transition-transform transform-gpu hover:scale-105">
+  <img src={icon3} alt="Card Image" className="h-24" />
+  <h1 className="text-center font-extrabold text-3xl mt-5">You have avoided physical activity.</h1>
+  <button className='w-48 rounded-xl text-red-400 hover:text-white  hover:bg-red-400 border border-red-400 mt-5'>Book trial</button>
+</div>
+
       </div>
     </>
   );
