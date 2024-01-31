@@ -1,8 +1,40 @@
-# React + Vite
+# Elda Health Yoga Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Elda Health Yoga website! This website provides information about yoga practices for mental well-being, offers product details, and more.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Getting Started](#getting-started)
+
+## Features
+
+- **Homepage Video:** Engaging video content about yoga practices for the mind.
+- **Product Page:** Information about various yoga packages and pricing.
+- **Login Page:** Secure login for accessing personalized content.
+- **Yoga Batches:** Schedule and details of upcoming yoga batches.
+- **Responsive Design:** Ensures a seamless experience across different devices.
+
+## Getting Started
+
+1. Clone the repository :
+
+```bash
+git clone https://github.com/Anshika31sharma/YogaBlissPortal.git>
+cd elda-health-yoga
+
+2. Install the required dependencies:
+
+npm install
+
+3. Start the development server:
+
+ npm run dev
+
+# Authors
+
+Anshika Sharma
+
+
+
+
