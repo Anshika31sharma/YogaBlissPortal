@@ -33,8 +33,6 @@ const ProductPage = () => {
               Buy Now
             </button>
           </div>
-
-          {/* Package 2 */}
           <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
             <div>
               <h3 className="text-xl font-bold">Package 2</h3>
@@ -46,7 +44,7 @@ const ProductPage = () => {
           </div>
 
           {/* Package 3 */}
-          <div className="bg-gray-100 p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
+          <div className="bg-gray-100  p-6 rounded-2xl shadow-lg mb-4 flex flex-col items-center justify-between">
             <div>
               <h3 className="text-xl font-bold">Package 3</h3>
               <p className="text-lg">$15/month</p>

@@ -29,8 +29,8 @@ const YogaBatch = () => {
       />
 
       <div className="text-center mb-4">
-        <h2 className="text-2xl mt-5 font-bold">What is Yoga for the mind</h2>
-        <p className="mt-2 text-lg">
+        <h2 className=" mt-5 text-4xl font-medium">What is Yoga for the mind</h2>
+        <p className="mt-2 text-lg text-gray-500">
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis ullam sapiente eum libero rem voluptate nihil eligendi reprehenderit, illum cumque provident ad consequuntur unde dolorum, hic quas, asperiores consequatur quam veniam ut nam adipisci incidunt. Ducimus omnis excepturi quidem obcaecati neque explicabo, incidunt cumque.
         </p>
       </div>
@@ -41,7 +41,7 @@ const YogaBatch = () => {
           {availableDates.map((date) => (
             <div
               key={date}
-              className={`border p-2 cursor-pointer ${selectedDateSlot === date ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'}`}
+              className={`border p-2 rounded-2xl cursor-pointer ${selectedDateSlot === date ? ' bg-green-900 text-white' : 'hover:bg-gray-200'}`}
               onClick={() => handleDateSlotChange(date)}
             >
               {date}
@@ -56,7 +56,7 @@ const YogaBatch = () => {
           {availableTimeSlots.map((timeSlot) => (
             <div
               key={timeSlot}
-              className={`border p-2 cursor-pointer ${selectedTimeSlot === timeSlot ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'}`}
+              className={`border p-2 rounded-2xl cursor-pointer ${selectedTimeSlot === timeSlot ? 'bg-green-900 text-white' : 'hover:bg-gray-200'}`}
               onClick={() => handleTimeSlotChange(timeSlot)}
             >
               {timeSlot}
@@ -66,7 +66,7 @@ const YogaBatch = () => {
       </div>
 
       <button
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+        className="bg-red-400 text-white px-4 py-2 w-40 rounded-3xl hover:bg-red-500 transition duration-300"
         onClick={handleSchedule}
       >
         Schedule
