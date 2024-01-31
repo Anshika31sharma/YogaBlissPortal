@@ -1,40 +1,42 @@
 # Elda Health Yoga Website
 
-Welcome to the Elda Health Yoga website! This website provides information about yoga practices for mental well-being, offers product details, and more.
+Welcome to the Elda Health Yoga website! This platform provides valuable information about yoga practices for mental well-being, offers details about various yoga packages, and more.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Getting Started](#getting-started)
+- [Authors](#authors)
 
 ## Features
 
-- **Homepage Video:** Engaging video content about yoga practices for the mind.
-- **Product Page:** Information about various yoga packages and pricing.
+- **Homepage Video:** Engaging video content showcasing yoga practices for mental well-being.
+- **Product Page:** Detailed information about different yoga packages and their pricing.
 - **Login Page:** Secure login for accessing personalized content.
 - **Yoga Batches:** Schedule and details of upcoming yoga batches.
 - **Responsive Design:** Ensures a seamless experience across different devices.
 
 ## Getting Started
 
-1. Clone the repository :
+Follow these steps to get started with the Elda Health Yoga website:
 
-```bash
-git clone https://github.com/Anshika31sharma/YogaBlissPortal.git>
-cd elda-health-yoga
+1. **Clone the Repository:**
 
-2. Install the required dependencies:
+  
+   git clone https://github.com/Anshika31sharma/YogaBlissPortal.git
+   cd YogaBlissPortal
 
-npm install
+2. **Install Dependencies:**
 
-3. Start the development server:
+  
+   npm install
 
- npm run dev
+3.**Start the Development Server:**
 
-# Authors
+   
+    npm run dev
+
+## Authors
 
 Anshika Sharma
-
-
-
 
