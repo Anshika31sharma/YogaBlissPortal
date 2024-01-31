@@ -34,17 +34,16 @@ function App() {
   ];
 
   return (
-    <>
-      <Navbar toggleDarkMode={toggleDarkMode} />
-      <Carousel autoSlide={true}>
-          {[...slides.map((s, i) => <img key={i} src={s} className=' w-full ' />)]}
+    <div className="lg:flex lg:flex-col ">
+    <Navbar toggleDarkMode={toggleDarkMode} />
+    <Carousel autoSlide={true}>
+      {[...slides.map((s, i) => <img key={i} src={s} className='w-full' />)]}
       </Carousel>
-      <HomePage/>
-  <LoginPage />
-       <ProductPage/>
-       <YogaBatch/>
-    </>
+    <HomePage />
+    <LoginPage />
+    <ProductPage />
+    <YogaBatch />
+  </div>
   );
 }
-
 export default App;

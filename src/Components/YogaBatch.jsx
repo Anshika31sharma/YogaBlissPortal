@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
 
 const YogaBatch = () => {
-  const [selectedDateSlot, setSelectedDateSlot] = useState(null);
-  const [selectedTimeSlot, setSelectedTimeSlot] = useState(null);
-
-  // Dummy data for available dates and times
   const availableDates = ['2024-08-01', '2024-08-02', '2024-08-03', '2024-08-04', '2024-08-05', '2024-08-06', '2024-08-07', '2024-08-08', '2024-08-09', '2024-08-10'];
   const availableTimeSlots = ['10:00 AM - 11:00 AM', '5:00 PM - 6:00 PM'];
 
-  const handleStartDateChange = (e) => {
-    // Reset other selections
-    setSelectedDateSlot(null);
-    setSelectedTimeSlot(null);
-  };
+  const [selectedDateSlot, setSelectedDateSlot] = useState(availableDates[0]);
+  const [selectedTimeSlot, setSelectedTimeSlot] = useState(availableTimeSlots[0]);
 
   const handleDateSlotChange = (date) => {
     setSelectedDateSlot(date);
-    // Reset time slot selection
-    setSelectedTimeSlot(null);
+    setSelectedTimeSlot(availableTimeSlots[0]);
   };
 
   const handleTimeSlotChange = (timeSlot) => {
@@ -25,24 +17,20 @@ const YogaBatch = () => {
   };
 
   const handleSchedule = () => {
-    // Handle scheduling logic here
     console.log(`Scheduled for ${selectedTimeSlot} on ${selectedDateSlot}`);
   };
 
   return (
-    <div className="bg-gray-100 p-6 rounded-lg shadow-lg mb-4 w-full">
-      {/* Image */}
+    <div className="flex flex-col items-center justify-center h-screen ">
       <img
-        src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8eW9nYSUyMGNsYXNzfGVufDB8MHwwfHx8MA%3D%3D"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOOYNT8Uu2xEkic8PQpCkc8d3qoV2713E7A&usqp=CAU"
         alt="Yoga Batch"
         className="w-full h-48 object-cover mb-4"
       />
 
-
-      {/* Date Slots */}
-      <div className="mb-4">
-        <label htmlFor="dateSlot" className="block font-bold mb-2">Select Date Slot:</label>
-        <div className="flex gap-2">
+      <div className="mb-4 ">
+        <label htmlFor="dateSlot" className="block font-bold mb-2 ">Select Date Slot:</label>
+        <div className="flex flex-wrap gap-2">
           {availableDates.map((date) => (
             <div
               key={date}
@@ -55,10 +43,9 @@ const YogaBatch = () => {
         </div>
       </div>
 
-      {/* Time Slots */}
-      <div className="mb-4">
+      <div className="mb-4 mr-auto ml-64">
         <label htmlFor="timeSlot" className="block font-bold mb-2">Select Time Slot:</label>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {availableTimeSlots.map((timeSlot) => (
             <div
               key={timeSlot}
@@ -71,11 +58,9 @@ const YogaBatch = () => {
         </div>
       </div>
 
-      {/* Schedule Button */}
       <button
-        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+        className="bg-blue-500 text-white px-4 py-2 mr-auto ml-96 rounded hover:bg-blue-600 transition duration-300 "
         onClick={handleSchedule}
-        disabled={!selectedTimeSlot || !selectedDateSlot || !selectedStartDate}
       >
         Schedule
       </button>
