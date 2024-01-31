@@ -21,15 +21,22 @@ const YogaBatch = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen ">
+    <div className="flex flex-col items-center justify-center min-h-screen mx-auto p-4">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOOYNT8Uu2xEkic8PQpCkc8d3qoV2713E7A&usqp=CAU"
+        src="https://images.unsplash.com/photo-1616699002805-0741e1e4a9c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8eW9nYSUyMGNsYXNzfGVufDB8MHwwfHx8MA%3D%3D"
         alt="Yoga Batch"
-        className="w-full h-48 object-cover mb-4"
+        className=" md:max-w-5xl object-cover mb-4"
       />
 
-      <div className="mb-4 ">
-        <label htmlFor="dateSlot" className="block font-bold mb-2 ">Select Date Slot:</label>
+      <div className="text-center mb-4">
+        <h2 className="text-2xl mt-5 font-bold">What is Yoga for the mind</h2>
+        <p className="mt-2 text-lg">
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis ullam sapiente eum libero rem voluptate nihil eligendi reprehenderit, illum cumque provident ad consequuntur unde dolorum, hic quas, asperiores consequatur quam veniam ut nam adipisci incidunt. Ducimus omnis excepturi quidem obcaecati neque explicabo, incidunt cumque.
+        </p>
+      </div>
+
+      <div className="mb-4 w-full md:w-2/3">
+        <label htmlFor="dateSlot" className="block font-bold mb-2">Select Date Slot:</label>
         <div className="flex flex-wrap gap-2">
           {availableDates.map((date) => (
             <div
@@ -43,7 +50,7 @@ const YogaBatch = () => {
         </div>
       </div>
 
-      <div className="mb-4 mr-auto ml-64">
+      <div className="mb-4 w-full md:w-2/3">
         <label htmlFor="timeSlot" className="block font-bold mb-2">Select Time Slot:</label>
         <div className="flex flex-wrap gap-2">
           {availableTimeSlots.map((timeSlot) => (
@@ -59,7 +66,7 @@ const YogaBatch = () => {
       </div>
 
       <button
-        className="bg-blue-500 text-white px-4 py-2 mr-auto ml-96 rounded hover:bg-blue-600 transition duration-300 "
+        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
         onClick={handleSchedule}
       >
         Schedule

@@ -10,21 +10,21 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center  h-screen">
-      <div className="bg-gray-100 p-8 rounded-lg shadow-md max-w-5xl w-full md:w-96 mt-20 flex flex-col items-center justify-center">
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="bg-gray-100 p-8 rounded-lg shadow-md max-w-2xl w-full md:w-96 mt-20 flex flex-col items-center justify-center">
         <h1 className="text-4xl font-semibold mb-6">Login to your account</h1>
-        <div className="flex flex-col md:flex-row items-center md:items-start mb-4 p-2">
+        <div className="flex flex-col items-center md:flex-row md:items-start mb-4 p-2">
           <Flags
             selected={countryCode}
             onSelect={(code) => setCountryCode(code)}
-            className="mr-2 bg-white"
+            className="mb-2 md:mr-2 bg-white"
             options={['US', 'IN', 'GB', 'FR', 'DE', 'JP', 'BR']}
           />
           <input
             type="text"
             id="phoneNumber"
             placeholder="Enter Phone Number"
-            className="border p-3 rounded flex-1 w-full md:w-48"
+            className="border p-3 rounded w-full md:w-48"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
