@@ -10,7 +10,7 @@ const Navbar = ({  setActivePage }) => {
           className="text-white  md:text-4xl  font-semibold font-serif cursor-pointer mb-4 md:mb-0"
           onClick={() => handleTabClick('home')}
         >
-          Elda Health
+         Yoga and Health
         </h1>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 text-2xl font-serif  ">
           <button
